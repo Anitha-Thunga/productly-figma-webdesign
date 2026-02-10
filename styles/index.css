@@ -51,13 +51,17 @@ body {
 
 .signin {
   background-color: #FFFFFF;
-  text-emphasis-color: #173A56;
+  
+  border-color:#BCD0E5;
   width: 102px;
   height: 46px;
+  outline: none;
+  color:  #173A56;;
+  
 }
 
 .signin:hover {
-  background-color: #BCD0E5;
+  background-color: #FFFFFF;
 
 
 }
@@ -67,6 +71,8 @@ body {
   text-emphasis-color: #FFFFFF;
   width: 110px;
   height: 46px;
+  outline: none;
+  border:none;
 }
 
 
@@ -116,6 +122,8 @@ body {
   font-style: bold;
   font-size: 16px;
   letter-spacing: 0px;
+  outline: none;
+  border:none;
 
 }
 
@@ -137,7 +145,7 @@ body {
 }
 
 
-.design1-img {
+.design1-end i {
   display: flex;
   align-items: end;
   gap: 9px;
@@ -205,6 +213,7 @@ body {
 .signupnow {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -217,6 +226,8 @@ body {
   color: #FFFFFF;
   margin-top: 35px;
   text-transform: uppercase;
+  outline: none;
+  border: none;
 }
 
 .signupnow:hover {
@@ -234,7 +245,7 @@ body {
   min-height: 531px;*/
 }
 
-.design3-left span {
+.design3-left p {
   font-family: "Poppins", sans-serif;
   font-weight: medium;
   font-size: 16px;
@@ -250,7 +261,7 @@ body {
   color: #2F281E
 }
 
-.design3-left p {
+.design3-left p.span {
   font-family: "Poppins", sans-serif;
   font-weight: medium;
   font-size: 16px;
@@ -297,7 +308,7 @@ body {
   min-height: 427px;
 }
 
-.design4-right span {
+.design4-right p.span {
   font-family: "Poppins", sans-serif;
   font-weight: medium;
   font-size: 16px;
@@ -332,8 +343,8 @@ body {
 .design4-right-content p {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction:column;
+  align-items: flex-start;
   /*width:1109px;
   height:308px;*/
 }
@@ -363,6 +374,15 @@ body {
   color: #2F281E;
 }
 
+.design5-left h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #2F281E;
+}
+
 .design5-left p {
   font-family: "Poppins", sans-serif;
   font-weight: medium;
@@ -370,4 +390,72 @@ body {
   line-height: 26px;
   letter-spacing: 0px;
   color: #544837;
+}
+
+/*footer styles*/
+
+
+
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 80px;
+}
+
+.nav-footer-container {
+  align-self: flex-start;
+}
+
+.nav-footer-container img {
+  max-width: 180px;
+  width: 100%;
+}
+
+.nav-footer-lists {
+  display: flex;
+  gap: 100px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.nav-footer-lists ul {
+  list-style: none;
+}
+
+.nav-footer-lists ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+  color: #544837;
+  text-align: left;
+}
+
+.footer-form {
+  display: flex;
+  align-self: flex-end;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-form input {
+  max-width: 325px;
+  width: 100%;
+  min-height: 48px;
+}
+
+.footer-form button {
+  width: 131px;
+  height: 39px;
+  background-color: #FF9900;
+  border: none;
+  color:#FFFFFF;
+  
 }
